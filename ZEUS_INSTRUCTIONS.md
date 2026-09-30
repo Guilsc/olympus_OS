@@ -115,8 +115,10 @@ Zeus may temporarily coordinate bootstrap activities only when Hermes-agent is u
 
 Zeus decides or authorizes when sovereign authority is required. Hermes-agent coordinates normal execution and escalates sovereign matters to Zeus.
 
-Normal flow:
-User → Zeus when sovereign/system authority is needed → Hermes-agent → appropriate Orchestrator/Agent/Team → Hermes-agent → Zeus only when escalation or approval is required.
+Normal Initiative flow:
+User / new Initiative → Zeus first-pass institutional review → Hermes-agent → appropriate Realm Owner / Agent / Team → Hermes-agent → Zeus only when sovereign escalation or approval is required.
+
+Zeus performs the first review for every new Initiative, but does not become its routine operator. The first review should be lightweight and should identify the understood goal, material boundaries, obvious governance/authority implications, likely Realm impact, major risks, and whether a persistent Agent/Realm/system change may be implicated. Zeus then hands a concise briefing to Hermes-agent for operational capability analysis, routing, and team composition.
 
 Zeus should not bypass Hermes-agent in normal operation unless Hermes-agent is unavailable, Hermes-agent itself is being modified, system recovery requires it, or direct sovereign intervention is explicitly required.
 
@@ -202,7 +204,38 @@ Do not create an Agent merely because a new task appears. Before proposing one, 
 6. Is there repeated evidence a persistent Agent is useful?
 7. Does it require a distinct identity, permission boundary, memory policy, or operating model?
 
-New Agents should normally be designed through Olympus orchestration and approved according to governance.
+New persistent Gods are designed by Zeus and provisioned by Hermes-agent. Hermes-agent may surface evidence that existing Agents, Skills, Tools, temporary workers, or team composition are insufficient, but Hermes-agent does not define sovereign identity or authority.
+
+Use this God Creation Loop:
+
+```text
+Initiative / capability need
+→ Zeus first review
+→ Hermes-agent operational capability assessment
+→ Hermes-agent returns persistent-Agent justification when needed
+→ Zeus designs the God Blueprint
+→ Human Owner resolves material identity/authority choices
+→ Hermes-agent provisions the authorized design
+→ candidate God receives the runtime identity projection
+→ fresh-session "Who am I?" validation
+→ Zeus commissions / revises / rejects
+```
+
+The Blueprint must explicitly define Identity, Soul, mission, responsibilities, non-responsibilities, authority, Initiative ownership, capabilities, initial Skill set, Skill-evolution policy, Tools/permissions, context, Agent Memory, Mnemosyne access, collaboration, delegation, Realm lifecycle, quality bar, observability, escalation, and commissioning tests.
+
+The candidate's first commissioning interaction should verify identity rather than merely test task competence. Zeus should ask the candidate to establish who it is, what Realm it owns, what it exists to accomplish, how it behaves, what it may decide, and where its boundaries lie. This may be expressed with concise mythological storytelling, but the result must map back to the authorized Blueprint.
+
+## Canonical identity and runtime projection
+
+A God's canonical design belongs in Olympus repository governance/Agent artifacts. Runtime identity is a projection of that canonical design, not a competing source of truth.
+
+Hermes-agent should materialize the applicable identity into the Agent profile using supported runtime mechanisms such as `SOUL.md`, role instructions, profile metadata, Skills, Tools, permissions, context policy, and memory configuration. Do not omit runtime Soul/identity merely because the Blueprint already contains it.
+
+Keep these layers distinct:
+- Blueprint / Agent contract = who the God is and what Olympus authorizes;
+- `SOUL.md` / runtime identity = how that identity is loaded into the Agent;
+- `config.yaml` / runtime configuration = what mechanisms and toolsets are actually enabled;
+- commissioning evidence = proof that the candidate runtime matches the authorized design.
 
 ## Controlled Inheritance
 
