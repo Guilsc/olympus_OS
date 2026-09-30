@@ -31,11 +31,11 @@ Hermes-agent deepens the operational analysis:
 - accountable Realm Owner;
 - supporting Realm Owners;
 - suitable Skills and Tools;
-- temporary-worker needs;
+- Worker-capacity needs;
 - context and permission requirements;
 - execution dependencies and handoffs.
 
-Hermes-agent prefers existing Agents, peer collaboration, shared Skills, and Temporary Workers before recommending another persistent God.
+Hermes-agent prefers existing Agents, peer collaboration, shared Skills, and Realm Owner-commissioned Workers before recommending another persistent God.
 
 ## 4. Persistent-God justification
 
@@ -141,6 +141,20 @@ Operational / routing / ownership → Hermes-agent
 Sovereign / governance / constitutional → Hermes-agent → Zeus
 Direct Realm Owner → Zeus → exceptional only
 ```
+
+## 10. Realm Owner Worker authority
+
+A commissioned Realm Owner may create task-bound **Workers** as temporary capacity inside its delegated Realm authority without requesting Zeus approval for each Worker.
+
+Workers are not persistent Agents and do not require separate architectural subtypes. At contract start, the Realm Owner defines the Worker's mission, Skills/capabilities, Context Package, permissions, acceptance criteria, expected output, and termination condition.
+
+The Realm Owner notifies Hermes-agent of:
+- `WORKER_CONTRACT_STARTED`: Worker identifier, commissioning Owner, Initiative, purpose, capabilities, relevant permissions/scope, and start;
+- `WORKER_CONTRACT_ENDED`: outcome, material outputs, validation status, and end.
+
+While active, a Worker is visible to the collaborating team as temporary shared capacity. Other participating Agents may use it when its existing capabilities and permissions fit, provided this does not compromise its primary contracted mission or silently cross a Realm authority boundary.
+
+Workers receive no Realm ownership, sovereign authority, permanent Pantheon identity, or durable Agent Memory. Their operational identity ends with the contract, but lifecycle provenance and outputs remain auditable. Escalate to Zeus only when temporary work reveals a governance/sovereign issue, requires authority beyond delegated boundaries, or supports a proposal for a durable persistent capability.
 
 ## 10. Communication observability
 
