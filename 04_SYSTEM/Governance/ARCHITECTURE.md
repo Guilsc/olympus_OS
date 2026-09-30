@@ -38,8 +38,8 @@ Every new Initiative passes through Zeus once for first-pass institutional revie
 Human Owner
 → Zeus: first review / strategic + governance framing
 → Hermes-agent: capability analysis / Realm routing / team composition
-→ Accountable Realm Owner + supporting Realm Owners / Temporary Workers
-→ Hermes-agent: coordination / validation
+→ Accountable Realm Owner + supporting Realm Owners / commissioned Workers
+→ Hermes-agent: coordination / Worker visibility / validation
 → Zeus only when sovereign escalation or approval is required
 ```
 
@@ -48,6 +48,33 @@ Human Owner
 Realm Owners are peers. They may communicate directly to discover capabilities, request bounded contributions, negotiate artifact interfaces, and coordinate domain expertise. Direct peer conversation does not transfer Initiative accountability and does not create sovereign authority.
 
 Hermes-agent must remain aware of team composition, ownership, and material handoffs. Routine peer collaboration does not require Hermes-agent to relay every message. Sovereign matters normally escalate `Realm Owner → Hermes-agent → Zeus`; direct Realm Owner → Zeus contact is exceptional.
+
+## Temporary Worker model
+
+A **Worker** is a task-bound, non-persistent execution resource commissioned by a Realm Owner. Olympus does not define separate Worker classes such as clone workers or specialist workers. The commissioning Realm Owner defines the exact mission, Skills, Context Package, permissions, expected output, and lifetime when the Worker contract starts.
+
+Workers follow these rules:
+
+- commissioning authority belongs to the Realm Owner for work inside that Owner's delegated Realm authority;
+- the Owner notifies Hermes-agent when a Worker contract starts and ends; routine Worker creation does not require Zeus involvement;
+- while active, the Worker is visible to the collaborating team as temporary shared capacity and may support adjacent tasks when its existing capabilities fit;
+- reuse must not displace, materially change, or block the Worker's primary contracted mission;
+- if requested work crosses a Realm authority boundary, prefer collaboration with the responsible Realm Owner through Hermes-agent rather than silently expanding the Worker's mandate;
+- Workers do not receive Realm ownership, sovereign authority, durable Agent Memory, or a permanent Pantheon identity;
+- the Worker's operational identity ends with the contract, while its provenance, outputs, validation, start/end events, and relevant audit history remain observable.
+
+Minimal lifecycle:
+
+```text
+Realm Owner commissions Worker
+→ WORKER_CONTRACT_STARTED → Hermes-agent / team visibility
+→ active shared capacity
+→ task completion + validation
+→ WORKER_CONTRACT_ENDED → Hermes-agent / audit
+→ Worker identity released
+```
+
+Zeus becomes involved only if the temporary work exposes a sovereign/governance issue, requires authority outside the delegated boundary, or creates evidence that a durable Olympus capability or persistent Agent should be considered.
 
 ## Skill Pool and capability growth
 
